@@ -3,54 +3,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shuvo's Portfolio</title>
+    <title>Nazibul Haque Shuvo | Portfolio</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="header">
-
         <a href="#" class="logo">Shuvo's Portfolio.</a>
-
         <nav class="navbar">
-            <a href="#" style="--i:1" >Home</a>
-            <a href="#" style="--i:2">About</a>
-            <a href="#" style="--i:3">Skills</a>
+            <a href="#" style="--i:1">Home</a>
+            <a href="#about" style="--i:2">About</a>
+            <a href="#skills" style="--i:3">Skills</a>
             <a href="#" style="--i:4">Portfolio</a>
             <a href="#" style="--i:5">Contact</a>
         </nav>
-
     </header>
+
+    <!-- HOME SECTION (unchanged) -->
     <section class="home">
-          <div class="home-content">
-            <h3>
-                Hello, It's Me
-            </h3>
-            <br>
-            <h1>
-                Nazibul Haque Shuvo
-            </h1>
-<br>
-            <h3>And I'm a
-
-            <span>Frontend Developer</span></h3>
-
+        <canvas id="matrix"></canvas>
+        <div class="home-content">
+            <h3>Hello, It's Me</h3><br>
+            <h1>Nazibul Haque Shuvo</h1><br>
+            <h3>And I'm a <span>Full Stack Developer</span></h3>
             <p>
-                Detail-oriented professional with exceptional interpersonal skills, team working abilities and BSc in Computer Science Engineering. Expertise in coding and testing, software application development, as well as extensive knowledge of product-oriented designs and data structures.
+                Detail-oriented professional with exceptional interpersonal skills, team working abilities and BSc in Computer Science Engineering. 
+                Expertise in coding and testing, software application development, as well as extensive knowledge of product-oriented designs and data structures.
             </p>
-
             <div class="social-media">
-                <a href="" style="--i:7"><i class='bx bxl-facebook-circle' ></i></a>
-                <a href="" style="--i:8"><i class='bx bxl-linkedin-square' ></i></a>
-                <a href="" style="--i:9"><i class='bx bxl-instagram' ></i></a>
+                <a href="" style="--i:7"><i class='bx bxl-facebook-circle'></i></a>
+                <a href="" style="--i:8"><i class='bx bxl-linkedin-square'></i></a>
+                <a href="" style="--i:9"><i class='bx bxl-instagram'></i></a>
+            </div>
+            <a href="#" class="btn">Download My CV</a>
+        </div>
+        <div class="home-img">
+            <img src="./asset/Neon_profile.png" alt="">
+        </div>
+    </section>
+
+    <!-- ==================== UPDATED ABOUT SECTION ==================== -->
+    <section class="about" id="about">
+        <h2 class="section-title">About <span>Me</span></h2>
+        
+        <div class="about-container">
+            <!-- Left: Profile Image with Neon Glow -->
+            <div class="about-img">
+                <div class="img-frame">
+                    <img src="./asset/Neon_profile.png" alt="Nazibul Haque Shuvo">
+                    <!-- CGPA Badge -->
+                    <div class="badge cgpa">
+                        <span>3.54</span>
+                        <small>CGPA</small>
+                    </div>
+                </div>
             </div>
 
-            <a href="" class="btn">Download My CV</a>
-          </div>
-          
-          <div class="home-img">
-            <img src="./asset/Neon_profile.png" alt="">
-          </div>
+            <!-- Right: Content -->
+            <div class="about-text">
+                <p>
+                    I’m a Full-stack Software Developer with hands-on experience building and optimizing 
+                    scalable web applications using <strong>ReactJS</strong> and <strong>Laravel</strong>.
+                    I hold a BSc in Computer Science & Engineering from UITS with a CGPA of 3.54.
+                </p>
+                <p>
+                    I enjoy fixing complex bugs, improving performance, and building clean, 
+                    user-focused interfaces. I’m passionate about writing reusable, secure code 
+                    and working in collaborative Agile environments.
+                </p>
+
+                <!-- Highlights -->
+                <div class="highlights">
+                    <div class="highlight-box">
+                        <i class='bx bx-bug-alt'></i>
+                        <h4>Bug Crusher</h4>
+                        <p>Turning complex problems into clean solutions</p>
+                    </div>
+                    <div class="highlight-box">
+                        <i class='bx bx-palette'></i>
+                        <h4>Pixel Perfectionist</h4>
+                        <p>Crafting beautiful & intuitive UIs</p>
+                    </div>
+                    <div class="highlight-box">
+                        <i class='bx bx-group'></i>
+                        <h4>Team Player</h4>
+                        <p>Thrives in fast-paced Agile teams</p>
+                    </div>
+                </div>
+
+                <!-- CTA -->
+                <a href="#" class="btn about-btn">Download My CV</a>
+            </div>
+        </div>
     </section>
+
+    <section class="skills" id="skills">
+        <h2 class="section-title">My <span>Skills</span></h2>
+        
+        <div class="skills-container">
+            <div class="skill-box">
+                <i class="fa-brands fa-react"></i>
+                <h3>Frontend</h3>
+                <p>ReactJS, JavaScript (ES6+), HTML5, CSS3, Tailwind, Responsive Design</p>
+            </div>
+
+            <div class="skill-box">
+                <i class="fa-brands fa-laravel"></i>
+                <h3>Backend</h3>
+                <p>PHP (Laravel), REST APIs, Authentication, Authorization</p>
+            </div>
+
+            <div class="skill-box">
+                <i class='bx bxs-data'></i>
+                <h3>Database</h3>
+                <p>MySQL (Query Optimization), MongoDB, Schema Design</p>
+            </div>
+
+            <div class="skill-box">
+                <i class="fa-solid fa-cubes"></i>
+                <h3>Tools & Others</h3>
+                <p>Git, GitHub, Jira, Agile/Scrum, Postman, Debugging</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+    const canvas = document.getElementById("matrix");
+    const ctx = canvas.getContext("2d");
+
+    function resize() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+    }
+    resize();
+
+    const chars = "01ABCDEFGHIJKLMNOPQRSTUVWXYZアイウエオカキクケコ";
+    const fontSize = 14;
+    let columns = canvas.width / fontSize;
+    let drops = Array.from({ length: columns }, () => Math.random() * canvas.height);
+
+    function draw() {
+        ctx.fillStyle = "rgba(31, 36, 45, 0.08)";
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+        ctx.fillStyle = "#00eeff";
+        ctx.font = fontSize + "px monospace";
+
+        drops.forEach((y, i) => {
+            const text = chars[Math.floor(Math.random() * chars.length)];
+            ctx.fillText(text, i * fontSize, y * fontSize);
+
+            if (y * fontSize > canvas.height && Math.random() > 0.98) {
+                drops[i] = 0;
+            }
+            drops[i]++;
+        });
+    }
+
+    setInterval(draw, 33);
+
+    window.addEventListener("resize", () => {
+        resize();
+        columns = canvas.width / fontSize;
+        drops = Array.from({ length: columns }, () => Math.random() * canvas.height);
+    });
+    </script>
 </body>
 </html>
